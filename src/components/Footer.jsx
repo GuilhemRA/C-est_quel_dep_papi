@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div id="footer-container">
             <div>
-            <h3 className="h3-footer">Guilhem Rebéjac © 2025</h3>
+            <a className="h3-footer" href="/">Guilhem Rebéjac © 2025</a>
             </div>
         </div>
     );

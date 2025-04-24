@@ -74,7 +74,7 @@
     font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .departement-card {
         width: 45vw;
         height: auto;
@@ -102,4 +102,4 @@
     .dep-description-line {
         font-size: 11px;
     }
-}
+} */

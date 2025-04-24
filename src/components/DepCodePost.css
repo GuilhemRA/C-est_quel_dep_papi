@@ -1,0 +1,96 @@
+#postalGame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+
+  .game-dialogue {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .dialogue-bubble {
+    background-color: #e9f7ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .dialogue-bubble.question {
+    background-color: #d9e9ff;
+  }
+  
+  .dialogue-bubble.answer {
+    background-color: #c6f0ff;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #4a90e2;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3578d4;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .dialogue-bubble.answer {
+    font-size: 18px;
+    color: #333;
+  }
+
+  #new-game-button {
+    margin-top: 20px;
+    background-color: #76c7c0;
+    font-size: 16px;
+  }
+  
+  #new-game-button:hover {
+    background-color: #5ba39e;
+  }

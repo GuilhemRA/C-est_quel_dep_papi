@@ -29,6 +29,7 @@ const departementsData = [
     name: "les Alpes de Haute-Provence",
     capital: "Digne-les-Bains",
     adminRegion: "Provence-Alpes-Côte d'Azur",
+    codePostal: "04000"
   },
   {
     number: 5,
@@ -36,6 +37,7 @@ const departementsData = [
     name: "les Haute-Alpes",
     capital: "Gap",
     adminRegion: "Provence-Alpes-Côte d'Azur",
+    codePostal: "05000"
   },
   {
     number: 6,
@@ -43,6 +45,7 @@ const departementsData = [
     name: "les Alpes-Maritimes",
     capital: "Nice",
     adminRegion: "Provence-Alpes-Côte d'Azur",
+    codePostal: "06000"
   },
   {
     number: 7,
@@ -50,6 +53,7 @@ const departementsData = [
     name: "l'Ardèche",
     capital: "Privas",
     adminRegion: "Auvergne-Rhône-Alpes",
+    codePostal: "07000"
   },
   {
     number: 8,
@@ -57,6 +61,7 @@ const departementsData = [
     name: "les Ardennes",
     capital: "Charleville-Mézières",
     adminRegion: "Grand Est",
+    codePostal: "08000"
   },
   {
     number: 9,
@@ -64,6 +69,7 @@ const departementsData = [
     name: "l'Ariège",
     capital: "Foix",
     adminRegion: "Occitanie",
+    codePostal: "09000"
   },
   {
     number: 10,
@@ -71,6 +77,7 @@ const departementsData = [
     name: "l'Aube",
     capital: "Troyes",
     adminRegion: "Grand Est",
+    codePostal: "10000"
   },
   {
     number: 11,
@@ -78,6 +85,7 @@ const departementsData = [
     name: "l'Aude",
     capital: "Carcassonne",
     adminRegion: "Occitanie",
+    codePostal: "11000"
   },
   {
     number: 12,
@@ -85,6 +93,7 @@ const departementsData = [
     name: "l'Aveyron",
     capital: "Rodez",
     adminRegion: "Occitanie",
+    codePostal: "12000"
   },
   {
     number: 13,
@@ -92,6 +101,7 @@ const departementsData = [
     name: "les Bouches-du-Rhônes",
     capital: "Marseille",
     adminRegion: "Provence-Alpes-Côte d'Azur",
+    codePostal: "13000"
   },
   {
     number: 14,
@@ -99,6 +109,7 @@ const departementsData = [
     name: "le Calvados",
     capital: "Caen",
     adminRegion: "Normandie",
+    codePostal: "14000"
   },
   {
     number: 15,
@@ -106,6 +117,7 @@ const departementsData = [
     name: "le Cantal",
     capital: "Aurillac",
     adminRegion: "Auvergne-Rhône-Alpes",
+    codePostal: "15000"
   },
   {
     number: 16,
@@ -113,6 +125,7 @@ const departementsData = [
     name: "la Charente",
     capital: "Angoulème",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "16000"
   },
   {
     number: 17,
@@ -120,6 +133,7 @@ const departementsData = [
     name: "la Charente-Maritime",
     capital: "La Rochelle",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "17000"
   },
   {
     number: 18,
@@ -127,6 +141,7 @@ const departementsData = [
     name: "le Cher",
     capital: "Bourges",
     adminRegion: "Centre Val de Loire",
+    codePostal: "18000"
   },
   {
     number: 19,
@@ -134,6 +149,7 @@ const departementsData = [
     name: "la Corrèze",
     capital: "Tulle",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "19000"
   },
   {
     number: 2.1,
@@ -141,6 +157,7 @@ const departementsData = [
     name: "la Corse-du-Sud",
     capital: "Ajaccio",
     adminRegion: "Corse",
+    codePostal: "20000"
   },
   {
     number: 2.2,
@@ -148,6 +165,7 @@ const departementsData = [
     name: "la Haute-Corse",
     capital: "Bastia",
     adminRegion: "Corse",
+    codePostal: "20200"
   },
   {
     number: 21,
@@ -155,6 +173,7 @@ const departementsData = [
     name: "la Côte-d'Or",
     capital: "Dijon",
     adminRegion: "Bourgogne-Franche-Comté",
+    codePostal: "21000"
   },
   {
     number: 22,
@@ -162,6 +181,7 @@ const departementsData = [
     name: "les Côtes d'Armor",
     capital: "Saint-Brieuc",
     adminRegion: "Bretagne",
+    codePostal: "22000"
   },
   {
     number: 23,
@@ -169,6 +189,7 @@ const departementsData = [
     name: "la Creuse",
     capital: "Guéret",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "23000"
   },
   {
     number: 24,
@@ -176,6 +197,7 @@ const departementsData = [
     name: "la Dordogne",
     capital: "Périgueux",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "24000"
   },
   {
     number: 25,
@@ -183,6 +205,7 @@ const departementsData = [
     name: "le Doubs",
     capital: "Besançon",
     adminRegion: "Bourgogne-Franche-Comté",
+    codePostal: "25000"
   },
   {
     number: 26,
@@ -190,6 +213,7 @@ const departementsData = [
     name: "la Drôme",
     capital: "Valence",
     adminRegion: "Auvergne-Rhône-Alpes",
+    codePostal: "26000"
   },
   {
     number: 27,
@@ -197,6 +221,7 @@ const departementsData = [
     name: "l'Eure",
     capital: "Evreux",
     adminRegion: "Normandie",
+    codePostal: "27000"
   },
   {
     number: 28,
@@ -204,6 +229,7 @@ const departementsData = [
     name: "l'Eure-et-Loir",
     capital: "Chartres",
     adminRegion: "Centre Val de Loire",
+    codePostal: "28000"
   },
   {
     number: 29,
@@ -211,6 +237,7 @@ const departementsData = [
     name: "le Finistère",
     capital: "Quimper",
     adminRegion: "Bretagne",
+    codePostal: "29000"
   },
   {
     number: 30,
@@ -218,6 +245,7 @@ const departementsData = [
     name: "le Gard",
     capital: "Nîmes",
     adminRegion: "Occitanie",
+    codePostal: "30000"
   },
   {
     number: 31,
@@ -225,6 +253,7 @@ const departementsData = [
     name: "la Haute-Garonne",
     capital: "Toulouse",
     adminRegion: "Occitanie",
+    codePostal: "31000"
   },
   {
     number: 32,
@@ -232,6 +261,7 @@ const departementsData = [
     name: "le Gers",
     capital: "Auch",
     adminRegion: "Occitanie",
+    codePostal: "32000"
   },
   {
     number: 33,
@@ -239,6 +269,7 @@ const departementsData = [
     name: "la Gironde",
     capital: "Bordeaux",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "33000"
   },
   {
     number: 34,
@@ -246,6 +277,7 @@ const departementsData = [
     name: "l'Hérault",
     capital: "Montpellier",
     adminRegion: "Occitanie",
+    codePostal: "34000"
   },
   {
     number: 35,
@@ -253,6 +285,7 @@ const departementsData = [
     name: "l'Ille-et-Vilaine",
     capital: "Rennes",
     adminRegion: "Bretagne",
+    codePostal: "35000"
   },
   {
     number: 36,
@@ -260,6 +293,7 @@ const departementsData = [
     name: "l'Indre",
     capital: "Châteauroux",
     adminRegion: "Centre Val de Loire",
+    codePostal: "36000"
   },
   {
     number: 37,
@@ -267,6 +301,7 @@ const departementsData = [
     name: "l'Indre-et-Loire",
     capital: "Tours",
     adminRegion: "Centre Val de Loire",
+    codePostal: "37000"
   },
   {
     number: 38,
@@ -274,6 +309,7 @@ const departementsData = [
     name: "l'Isère",
     capital: "Grenoble",
     adminRegion: "Auvergne-Rhône-Alpes",
+    codePostal: "38000"
   },
   {
     number: 39,
@@ -281,6 +317,7 @@ const departementsData = [
     name: "le Jura",
     capital: "Lons-le-Saunier",
     adminRegion: "Bourgogne-Franche-Comté",
+    codePostal: "39000"
   },
   {
     number: 40,
@@ -288,6 +325,7 @@ const departementsData = [
     name: "les Landes",
     capital: "Mont-de-Marsan",
     adminRegion: "Nouvelle-Aquitaine",
+    codePostal: "40000"
   },
   {
     number: 41,
@@ -673,6 +711,41 @@ const departementsData = [
     name: "le Val-d'Oise",
     capital: "Pontoise",
     adminRegion: "Ile-de-France",
+  },
+  {
+    number: 971,
+    alias: "",
+    name: "la Guadeloupe",
+    capital: "Basse-Terre",
+    adminRegion: "Guadeloupe",
+  },
+  {
+    number: 972,
+    alias: "",
+    name: "la Martinique",
+    capital: "Fort-de-France",
+    adminRegion: "Martinique",
+  },
+  {
+    number: 973,
+    alias: "",
+    name: "la Guyane",
+    capital: "Cayenne",
+    adminRegion: "Guyane",
+  },
+  {
+    number: 974,
+    alias: "",
+    name: "La Réunion",
+    capital: "Saint-Denis",
+    adminRegion: "La Réunion",
+  },
+  {
+    number: 976,
+    alias: "",
+    name: "Mayotte",
+    capital: "Dzaoudzi",
+    adminRegion: "Mayotte",
   },
 ];
 
