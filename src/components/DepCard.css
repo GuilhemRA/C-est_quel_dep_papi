@@ -9,7 +9,7 @@
 
 .departement-card {
     width: 200px;
-    height: 220px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

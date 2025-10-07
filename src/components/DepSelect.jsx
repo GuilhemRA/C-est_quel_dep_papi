@@ -10,8 +10,8 @@ const DepSelect = ({ setFilteredDepartements }) => {
 
   const departementNums = [...departementsData]
     .map((dep) => {
-      if (dep.number === 2.1) return "2A";
-      if (dep.number === 2.2) return "2B";
+      if (dep.number === 20.1) return "2A";
+      if (dep.number === 20.2) return "2B";
       return dep.number.toString().padStart(2, "0");
     })
     .sort((a, b) => {
@@ -57,8 +57,8 @@ const DepSelect = ({ setFilteredDepartements }) => {
   };
 
   const normalizeDepNumber = (num) => {
-    if (num === "2A") return "2.1";
-    if (num === "2B") return "2.2";
+    if (num === "2A") return "20.1";
+    if (num === "2B") return "20.2";
     return num;
   };
 

@@ -152,7 +152,7 @@ const departementsData = [
     codePostal: "19000"
   },
   {
-    number: 2.1,
+    number: 20.1,
     alias: "A",
     name: "la Corse-du-Sud",
     capital: "Ajaccio",
@@ -160,7 +160,7 @@ const departementsData = [
     codePostal: "20000"
   },
   {
-    number: 2.2,
+    number: 20.2,
     alias: "B",
     name: "la Haute-Corse",
     capital: "Bastia",
