@@ -19,7 +19,7 @@ export default function HeaderApp() {
     <div id="header-container">
       {/* Conteneur logo */}
       <div className="logo-container">
-        <img src="../public/france4.png" alt="Logo" className="logo-image" />
+        <img src="/france4.png" alt="Logo" className="logo-image" />
       </div>
 
       <a className="h1-header" href="/">C'est quel département Papi ?</a>
