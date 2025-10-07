@@ -20,18 +20,26 @@ const DepSelect = ({ setFilteredDepartements }) => {
         if (val === "2B") return 20.2;
         return parseFloat(val);
       };
+
       return order(a) - order(b);
     });
 
   const [selectedMinDep, setSelectedMinDep] = useState(departementNums[0]);
-  const [selectedMaxDep, setSelectedMaxDep] = useState(departementNums[departementNums.length - 1]);
+  const [selectedMaxDep, setSelectedMaxDep] = useState(
+    departementNums[departementNums.length - 1]
+  );
   const [selectedRegion, setSelectedRegion] = useState("Toutes régions");
 
   const handleMinChange = (e) => {
     const newMin = e.target.value;
     setSelectedMinDep(newMin);
 
-    if (parseFloat(normalizeDepNumber(newMin)) > parseFloat(normalizeDepNumber(selectedMaxDep))) {
+    console.log("New Min:", newMin, "Selected Max:", selectedMaxDep);
+
+    if (
+      parseFloat(normalizeDepNumber(newMin)) >
+      parseFloat(normalizeDepNumber(selectedMaxDep))
+    ) {
       setSelectedMaxDep(newMin);
     }
   };
@@ -40,7 +48,10 @@ const DepSelect = ({ setFilteredDepartements }) => {
     const newMax = e.target.value;
     setSelectedMaxDep(newMax);
 
-    if (parseFloat(normalizeDepNumber(newMax)) < parseFloat(normalizeDepNumber(selectedMinDep))) {
+    if (
+      parseFloat(normalizeDepNumber(newMax)) <
+      parseFloat(normalizeDepNumber(selectedMinDep))
+    ) {
       setSelectedMinDep(newMax);
     }
   };
@@ -52,16 +63,16 @@ const DepSelect = ({ setFilteredDepartements }) => {
   };
 
   const handleSearch = () => {
-    const min = normalizeDepNumber(selectedMinDep);
-    const max = normalizeDepNumber(selectedMaxDep);
+    const minNum = parseFloat(normalizeDepNumber(selectedMinDep));
+    const maxNum = parseFloat(normalizeDepNumber(selectedMaxDep));
 
     const results = departementsData.filter((dep) => {
-      const num = dep.number.toString();
-      const inRange = num >= min && num <= max;
-      const inRegion =
-        selectedRegion === "Toutes régions" || dep.adminRegion === selectedRegion;
-
-      return inRange && inRegion;
+      const num = parseFloat(dep.number);
+      const matchesRegion =
+        selectedRegion === "Toutes régions" ||
+        dep.adminRegion === selectedRegion;
+      const inRange = num >= minNum && num <= maxNum;
+      return inRange && matchesRegion;
     });
 
     setFilteredDepartements(results);
@@ -71,7 +82,7 @@ const DepSelect = ({ setFilteredDepartements }) => {
     <div id="dep-select-container">
       <div className="div-select">
         <label className="h3-select" htmlFor="region">
-          Choisissez une région :{' '}
+          Choisissez une région :{" "}
         </label>
         <select
           id="my-filterbutton"
@@ -91,7 +102,7 @@ const DepSelect = ({ setFilteredDepartements }) => {
 
       <div className="div-select">
         <label className="h3-select" htmlFor="dep-min">
-          Déterminez une intervalle de :{' '}
+          Déterminez une intervalle de :{" "}
         </label>
         <select
           id="dep-min"
@@ -109,7 +120,8 @@ const DepSelect = ({ setFilteredDepartements }) => {
         </select>
 
         <label className="h3-select" htmlFor="dep-max">
-          {' '}à :{' '}
+          {" "}
+          à :{" "}
         </label>
         <select
           id="dep-max"
